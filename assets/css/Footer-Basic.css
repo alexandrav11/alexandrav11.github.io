@@ -1,9 +1,7 @@
 .footer-basic {
   position: relative;
-  top: 120px;
   width: 100%;
   padding: 40px 0;
-  background-color: black;
   color: #4b4c4d;
 }
 
@@ -19,11 +17,10 @@
 @media (min-width: 768px) {
   .footer-basic {
     position: relative;
-    top: 150px;
+    top: 50px;
     width: 100%;
-    padding: 40px 0;
-    padding-top: 40px;
-    background-color: black;
+    padding: 0px 0px 40px 0px;
+    background-color: rgba(0,0,0,0);
     color: #4b4c4d;
   }
 }
@@ -65,7 +62,7 @@
 
 .footer-basic .social {
   text-align: center;
-  color: rgba(255,255,255,0.55);
+  color: rgba(0,0,0,0.55);
 }
 
 .footer-basic .social > a {
@@ -76,22 +73,21 @@
   display: inline-block;
   text-align: center;
   border-radius: 50%;
-  border: 1px solid rgba(255,255,255,0.55);
+  border: 1px solid var(--bs-body-color);
   margin: 0 8px;
   color: inherit;
   transition: all 0.15s ease-in-out;
 }
 
 .footer-basic .social > a:hover {
-  color: rgba(255,255,255,0.75);
-  border-color: rgba(255,255,255,0.75);
+  color: var(--bs-body-color);
+  border-color: var(--bs-body-color);
 }
 
 .footer-basic .copyright {
   margin-top: 15px;
   text-align: center;
   font-size: 13px;
-  color: rgba(255,255,255,0.55);
   margin-bottom: 0;
 }
 
@@ -106,7 +102,7 @@
 div.line-separator {
   width: 60%;
   height: 1px;
-  background: rgba(255,255,255,0.55);
+  background: var(--bs-body-color);
   margin-left: 50%;
   transform: translate(-50%);
   margin-bottom: 20px;
@@ -116,7 +112,7 @@ div.line-separator {
   div.line-separator {
     width: 30%;
     height: 1px;
-    background: rgba(255,255,255,0.55);
+    background: var(--bs-body-color);
     margin-left: 50%;
     transform: translate(-50%);
     margin-bottom: 20px;
@@ -141,5 +137,21 @@ div.line-separator {
 
 #project .col {
   padding: 0;
+}
+
+.carousel-inner {
+  height: 425px;
+}
+
+.page-title-section {
+  height: 400px;
+}
+
+#calendar {
+  padding-top: 50px;
+}
+
+#contact {
+  padding-top: 50px;
 }
 

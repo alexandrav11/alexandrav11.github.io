@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body id="body">
+<body id="body" style="background: #faf5ec;">
     <nav class="navbar navbar-dark navbar-expand-md fixed-top" id="navbar" style="background: rgb(121, 171, 146);">
         <div class="container-fluid"><a class="navbar-brand" href="index.html"><img id="logo" src="assets/img/Alexandra%20Verschuuren%20Logo.png" alt="Alexandra Verschuuren logo"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" id="navbar-toggle"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse text-end" id="navcol-1">
@@ -31,27 +31,40 @@
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="work-with-me.html">work with me</a></li>
                     <li class="nav-item"><a class="nav-link" href="project-archive.html">Project ARCHIVE</a></li>
-                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="events.html">Events</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section id="project" class="section">
-        <div class="container section-container">
-            <div class="row">
+    <section id="events-title" class="page-title-section">
+        <div class="container" style="position: absolute;z-index: 1;height: 400px;max-width: none;">
+            <div class="row" style="margin: 325px 0px;">
                 <div class="col">
-                    <h4 class="text-center project-title"><strong>EXIT</strong><br>2022</h4>
-                    <h6 class="text-center project-author">Herman Lamers</h6>
-                    <div class="video-wrapper"><iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/29V_9xwqJPY" class="project-video" width="560" height="315"></iframe></div>
-                    <p class="project-text">A last exhibition at Hilton Art Lab.&nbsp;This performance experiment was an attempt to bring the visitors into the experience of being a performer and to confront the vulnerabilities of not knowing. <br></p>
-                    <div class="line-separator"></div>
-                    <h5 class="text-center project-subtitle">Credits</h5>
-                    <p class="text-center project-text">Curator and organizer:<br><strong>Herman Lamers</strong><br><br>Artists:<br><strong>Marja Zomer, Het Observatorium, Yvo van der Vat, Merijn Haenen and Herman Lamers, </strong><br><strong>Roman Nieuweboer, Werner van der Zwam, Alexandra Verschuuren</strong><br><br>Supported by: <br><strong>Art Central Rotterdam</strong><br><br>Thumbnail picture © Marja Zomer</p>
-                    <div class="line-separator"></div>
-                    <h5 class="text-center project-subtitle">Media</h5>
-                    <p class="text-center project-text"><a class="media-link" href="https://www.hoogtij.net/en/galerie/1456/" target="_blank"></a><br><a class="media-link" href="https://jegensentevens.nl/2022/03/art-central-rotterdam-extra-large-edition/" target="_blank">Article by Jegens &amp; Tevens – Art Central Rotterdam extra large edition<br></a><br><a class="media-link" href="https://www.facebook.com/ArtCentralRdam/photos/120554930554311" target="_blank">Facebook Art Central Rotterdam - promotion&nbsp;<br></a><a class="media-link" href="https://chmkoome.wordpress.com/2021/03/05/peek-show/" target="_blank"></a></p>
+                    <h1 class="text-center home-title" id="title-section"><strong>Events</strong></h1>
                 </div>
+            </div>
+        </div>
+        <div class="carousel slide" data-bs-ride="false" data-bs-pause="false" data-bs-keyboard="false" data-bs-touch="false" id="carousel" style="height: 400px;">
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="slide-events" alt="Alexandra Verschuuren performing bear me">
+                    <p id="credits-slide1" class="credits-slide"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="calendar">
+        <div class="container" id="calendar-big">
+            <div class="row">
+                <div class="col text-center"><iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FBrussels&showPrint=0&showTitle=0&mode=AGENDA&showNav=0&showTabs=0&showTz=0&showCalendars=0&src=M2EzZDI0MzQ2MGU0MDIyYmI2MmI3YjVkMmNiNWMyMTBhOTE1OTk2ZTQ0OTg5MWE3NmRjNzQzMzYxOTVhMGU0N0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23ef6c00" style="border-width: 0;" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+<!-- MONTH VIEW -->
+<!-- <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FBrussels&showPrint=0&showTitle=0&showTz=0&showCalendars=0&src=M2EzZDI0MzQ2MGU0MDIyYmI2MmI3YjVkMmNiNWMyMTBhOTE1OTk2ZTQ0OTg5MWE3NmRjNzQzMzYxOTVhMGU0N0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237986cb" style="border-width: 0;" width="800" height="600" frameborder="0" scrolling="no"></iframe> --></div>
+            </div>
+        </div>
+        <div class="container" id="calendar-small">
+            <div class="row">
+                <div class="col text-center"><iframe src="https://calendar.google.com/calendar/embed?height=500&wkst=2&ctz=Europe%2FBrussels&showPrint=0&showTitle=0&mode=AGENDA&showNav=0&showTabs=0&showTz=0&showCalendars=0&src=M2EzZDI0MzQ2MGU0MDIyYmI2MmI3YjVkMmNiNWMyMTBhOTE1OTk2ZTQ0OTg5MWE3NmRjNzQzMzYxOTVhMGU0N0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23ef6c00" style="border-width: 0;" width="350" height="600" frameborder="0" scrolling="no"></iframe></div>
             </div>
         </div>
     </section>

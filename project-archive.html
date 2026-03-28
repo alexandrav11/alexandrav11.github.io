@@ -23,43 +23,84 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body id="body">
+<body id="body" style="background: #faf5ec;">
     <nav class="navbar navbar-dark navbar-expand-md fixed-top" id="navbar" style="background: rgb(121, 171, 146);">
         <div class="container-fluid"><a class="navbar-brand" href="index.html"><img id="logo" src="assets/img/Alexandra%20Verschuuren%20Logo.png" alt="Alexandra Verschuuren logo"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" id="navbar-toggle"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse text-end" id="navcol-1">
                 <ul class="navbar-nav ms-auto" id="nav">
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="work-with-me.html">work with me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="project-archive.html">Project ARCHIVE</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="project-archive.html">Project ARCHIVE</a></li>
                     <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="contact.html">contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section id="contact-title" class="page-title-section">
+    <section id="project-archive-title" class="page-title-section">
         <div class="container" style="position: absolute;z-index: 1;height: 400px;max-width: none;">
             <div class="row" style="margin: 325px 0px;">
                 <div class="col">
-                    <h1 class="text-center home-title" id="title-section"><strong>Contact</strong></h1>
+                    <h1 class="text-center home-title" id="title-section"><strong>Project archive</strong></h1>
                 </div>
             </div>
         </div>
         <div class="carousel slide" data-bs-ride="false" data-bs-pause="false" data-bs-keyboard="false" data-bs-touch="false" id="carousel" style="height: 400px;">
             <div class="carousel-inner">
-                <div class="carousel-item active" id="slide-contact" alt="Alexandra Verschuuren performing bear me">
+                <div class="carousel-item active" id="slide-project-archive" alt="Alexandra Verschuuren performing bear me">
                     <p id="credits-slide1" class="credits-slide"></p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="contact">
+    <section id="portfolio">
         <div class="container section-container">
-            <div class="row row-cols-1 row-cols-md-4 row-cols-lg-4 row-cols-xl-4 row-cols-xxl-4" id="social-row">
-                <div class="col text-center social"><a id="email-link" href="" onclick="javascript:sendEmail()"><i class="icon ion-android-mail"></i></a></div>
-                <div class="col text-center social"><a href="https://www.instagram.com/alexandraverschuuren/" target="_blank"><i class="icon ion-social-instagram"></i></a></div>
-                <div class="col text-center social"><a href="https://www.youtube.com/channel/UCq2LIk27XSt6r-zKMuxXy_w" target="_blank"><i class="icon ion-social-youtube"></i></a></div>
-                <div class="col text-center social"><a href="https://www.linkedin.com/in/alexandra-verschuuren-5b24101b0" target="_blank"><i class="icon ion-social-linkedin"></i></a></div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-3">
+                <div class="col portfolio-column"><a class="work-link" href="zorg.html">
+                        <div id="work-8" class="work-thumbnail">
+                            <h3 class="work-title">ZORG<br></h3>
+                        </div>
+                    </a></div>
+                <div class="col portfolio-column"><a class="work-link" href="exit.html">
+                        <div id="work-9" class="work-thumbnail">
+                            <h3 class="work-title">EXIT<br></h3>
+                        </div>
+                    </a></div>
+                <div class="col portfolio-column"><a class="work-link" href="peek-show.html">
+                        <div id="work-1" class="work-thumbnail">
+                            <h3 class="work-title">(Peek show)<br></h3>
+                        </div>
+                    </a></div>
+                <div class="col portfolio-column"><a class="work-link" href="out-of-the-blue.html">
+                        <div id="work-2" class="work-thumbnail">
+                            <h3 class="work-title">Out of the blue</h3>
+                        </div>
+                    </a></div>
+                <div class="col portfolio-column"><a class="work-link" href="lift.html">
+                        <div id="work-4" class="work-thumbnail">
+                            <h3 class="work-title">LIFT</h3>
+                        </div>
+                    </a></div>
+                <div class="col portfolio-column"><a class="work-link" href="bear-me.html">
+                        <div id="work-5" class="work-thumbnail">
+                            <h3 class="work-title">bear me</h3>
+                        </div>
+                    </a></div>
+                <div class="col offset-xl-0 portfolio-column"><a class="work-link" href="trial-out-or-err-or.html">
+                        <div id="work-6" class="work-thumbnail">
+                            <h3 class="work-title">trial out or err_or</h3>
+                        </div>
+                    </a></div>
+                <div class="col offset-xl-0 portfolio-column"><a class="work-link" href="an-invitation-to-dance.html">
+                        <div id="work-7" class="work-thumbnail">
+                            <h3 class="work-title">The Audience experience of<br>An Invitation to DANCE</h3>
+                        </div>
+                    </a></div>
+                <div class="col portfolio-column"><a class="work-link" href="69.html">
+                        <div id="work-3" class="work-thumbnail">
+                            <h3 class="work-title">69</h3>
+                        </div>
+                    </a></div>
             </div>
         </div>
     </section>
@@ -70,7 +111,6 @@
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/Card-Carousel-slider.js"></script>
-    <script src="assets/js/email.js"></script>
     <script src="assets/js/Testimonial-Slider-9.js"></script>
 </body>
 
